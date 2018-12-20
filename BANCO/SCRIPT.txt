@@ -1,0 +1,23 @@
+create database sensores;
+use sensores;
+
+
+
+create table temperatura(
+
+id int primary key auto_increment,
+
+localiza varchar(10),
+
+temperatura int not null,
+
+state varchar(10),
+
+data_sensor timestamp not null);
+
+
+
+select * from temperatura
+order by data_sensor desc;
+
+select count(*) from temperatura;
